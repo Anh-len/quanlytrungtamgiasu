@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Trung tâm gia sư Ell</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="eCommerce HTML Template Free Download" name="keywords">
+	<meta content="eCommerce HTML Template Free Download" name="description">
+
+	<!-- Favicon -->
+	<link href="~/Assets/img/favicon.ico" rel="icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+	<!-- CSS Libraries -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<link href="~/Assets/lib/slick/slick.css" rel="stylesheet">
+	<link href="~/Assets/lib/slick/slick-theme.css" rel="stylesheet">
+
+	<!-- Template Stylesheet -->
+	<link href="~/Assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Top bar Start -->
+	<div class="top-bar">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<i class="fa fa-envelope"></i>
+					Caoanhtu20699@email.com
+				</div>
+				<div class="col-sm-6">
+					<i class="fa fa-phone-alt"></i>
+					+84345506845
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Top bar End -->
+	<!-- Nav Bar Start -->
+	<div class="nav">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+				<a href="#" class="navbar-brand">MENU</a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+					<div class="navbar-nav mr-auto">
+						<a href="https://localhost:44395/" class="nav-item nav-link">Trang Chủ</a>
+						<div class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">Khóa Học</a>
+							<div class="dropdown-menu">
+								<a href="https://localhost:44395/Home/TeacherClass" class="dropdown-item">Dành Cho Giảng Viên</a>
+								<a href="https://localhost:44395/Home/StudentClass" class="dropdown-item">Dành Cho Học Sinh</a>
+							</div>
+						</div>
+
+						<a href="https://localhost:44395/Home/Contact1" class="nav-item nav-link">Liên Hệ</a>
+					</div>
+					<div class="navbar-nav ml-auto">
+						<div class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown">Tài Khoản</a>
+							<div class="dropdown-menu">
+								<a href="http://localhost:50137/" class="dropdown-item">Đăng Nhập</a>
+								<a href="https://localhost:44395/Home/dangki" class="dropdown-item">Đăng Kí</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="bottom-bar">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-md-3">
+					<div class="logo">
+						<a href="https://localhost:44395/">
+							<img src="~/Assets/img/logo111.png" alt="Logo">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="search">
+						<input type="text" placeholder="Tìm kiếm">
+						<button><i class="fa fa-search"></i></button>
+					</div>
+				</div>
+				<div class="col-md-3">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	@RenderBody()
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-widget">
+						<h2></h2>
+						<div class="contact-info">
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-widget">
+						<h2>Liên Lạc</h2>
+						<div class="contact-info">
+							<p><i class="fa fa-map-marker"></i>61-Võ Trường Toản</p>
+							<p><i class="fa fa-envelope"></i>1710292@dlu.edu.vn</p>
+							<p><i class="fa fa-phone"></i>+84345506845</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-widget">
+						<h2>Theo Dõi</h2>
+						<div class="contact-info">
+							<div class="social">
+								<a href=""><i class="fab fa-twitter"></i></a>
+								<a href=""><i class="fab fa-facebook-f"></i></a>
+								<a href=""><i class="fab fa-linkedin-in"></i></a>
+								<a href=""><i class="fab fa-instagram"></i></a>
+								<a href=""><i class="fab fa-youtube"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-widget">
+						<h2></h2>
+						<ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<!-- Footer End -->
+	<!-- Back to Top -->
+	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+	<!-- JavaScript Libraries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+	<script src="~/Assets/lib/easing/easing.min.js"></script>
+	<script src="~/Assets/lib/slick/slick.min.js"></script>
+
+	<!-- Template Javascript -->
+	<script src="~/Assets/js/main.js"></script>
+	</div>
+
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	@RenderSection("scripts", required: false)
+</body>
+</html>

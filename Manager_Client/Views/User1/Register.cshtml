@@ -1,0 +1,68 @@
+﻿@model Manager_Client.Models.RegisterMoodel
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+<div class="row" >
+	<div class="col-lg-6">
+		<div class="register-form">
+
+		
+			@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+			<div class="form-group" >
+				@Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+				<div class="col-md-10">
+					@Html.TextBoxFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+					@Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+				</div>
+			</div>
+
+			<div class="form-group">
+				@Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+				<div class="col-md-10">
+					@Html.TextBoxFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+					@Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+				</div>
+			</div>
+
+			<div class="form-group">
+				@Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+				<div class="col-md-10">
+					@Html.PasswordFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+					@Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+				</div>
+			</div>
+
+			
+
+			<div class="form-group">
+				<div class="col-md-offset-2 col-md-10">
+					<input type="submit" value="Đăng kí" class="btn btn-default" />
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="col-lg-6">
+		<div class="login-form">
+			<div class="row">
+				<div class="logo">
+					<a href="">
+						<img src="~/Assets/img/sign-up.png" alt="Logo">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+	}
+
+
